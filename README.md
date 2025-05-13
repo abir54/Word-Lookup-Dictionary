@@ -98,7 +98,7 @@ In src/oxford_api.py:
 python
 USE_SANDBOX = True  # For safe testing
 
-# False to use production/live data
+False to use production/live data
 
 🌐 Web Scraping Fallback
 If Oxford API data is missing, the app will attempt to scrape definitions from the web.
