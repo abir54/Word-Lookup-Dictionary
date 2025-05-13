@@ -1,0 +1,7 @@
+PyQt5
+requests
+beautifulsoup4
+gtts
+playsound
+spacy
+Python
