@@ -33,16 +33,17 @@ A desktop application for online lookup of English words, providing:
 
 word-lookup-dictionary/
 ├── src/
-│ ├── dictionary_app.py # Main GUI Application
-│ ├── oxford_api.py # Oxford API Integration
-│ ├── scraper.py # Web Scraping Fallback
-│ ├── trie.py # Trie Data Structure
-│ ├── edit_distance.py # Edit Distance Algorithm
-│ ├── utils.py # Theme and Utility Functions
-│ ├── words.txt # Word List for Trie
-│ └── .env # API Keys (Optional, for security)
-├── requirements.txt
-└── README.md
+│   ├── dictionary_app.py        # Main GUI Application
+│   ├── oxford_api.py            # Oxford API Integration
+│   ├── scraper.py               # Web Scraping Fallback
+│   ├── trie.py                  # Trie Data Structure
+│   ├── edit_distance.py         # Edit Distance Algorithm
+│   ├── utils.py                 # Theme and Utility Functions
+│   ├── words.txt                # Word List for Trie
+│   └── .env                     # API Keys (Optional, for security)
+├── requirements.txt             # Required Python packages
+└── README.md                    # Project Documentation
+
 
 🔑 Oxford API Setup
 
