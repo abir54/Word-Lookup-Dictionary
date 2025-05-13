@@ -47,16 +47,23 @@ word-lookup-dictionary/
 🔑 Oxford API Setup
 
 1. Create a free account at: https://developer.oxforddictionaries.com/
+
 2. Get your `APP_ID` and `APP_KEY`.
+
 3. Open `src/oxford_api.py` and add your credentials:
+
 python
+
 APP_ID = 'cc3c7d27'
+
 APP_KEY = 'efbbc5edc75eebb22ede3aa057874553'
 
 💻 How to Run Locally (Step by Step)
 1. Clone the Repository
 bash:-
+
 git clone https://github.com/your-username/word-lookup-dictionary.git
+
 cd word-lookup-dictionary
 
 2. Setup Virtual Environment
@@ -68,33 +75,50 @@ venv\Scripts\activate
 # Mac/Linux:
 source venv/bin/activate
 
+
 3. Install Dependencies
 bash:-
+
 pip install -r requirements.txt
+
 python -m spacy download en_core_web_sm
 
 4. Run the Application
 bash:-
+
 cd src
+
 python dictionary_app.py
 
 🔧 Optional Configurations
 🔁 Switch between Sandbox and Production API
+
 In src/oxford_api.py:
 python
 USE_SANDBOX = True  # For safe testing
+
 # False to use production/live data
+
 🌐 Web Scraping Fallback
 If Oxford API data is missing, the app will attempt to scrape definitions from the web.
 
 💼 Build Executable (Windows)(Optional)
+
 Install PyInstaller
+
 bash:-
+
 pip install pyinstaller
+
 Build Executable
+
 bash:-
+
 cd src
+
 pyinstaller --onefile --noconsole dictionary_app.py
+
+
 #Executable will appear in dist/ folder.
 
 
